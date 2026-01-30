@@ -45,10 +45,12 @@ SELECT DISTINCT(Category) FROM Food_Sales;
 
 #### 2. Sales per Day:
 SELECT Sales_Date, SUM(Total_Sales) AS Sales_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;
+
 <img width="242" height="287" alt="salesperday" src="https://github.com/user-attachments/assets/deb06290-480b-4a30-9a09-fed76d752f63" />
 
 #### 3. Sold per Day:
 SELECT Sales_Date, SUM(Quantity) AS Food_Sold_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;
+
 <img width="266" height="287" alt="soldperday" src="https://github.com/user-attachments/assets/8b4dc4a2-77b4-4aee-a22f-ca7c9d109e98" />
 
 #### 4. Highest Quantity Sold in One Day:
