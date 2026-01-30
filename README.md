@@ -39,27 +39,27 @@ Microsoft Excel, PostgreSQL database, Power BI
 ## Food Sales SQL Queries
 ## KPI
 #### 1. Category:
-SELECT DISTINCT(Category) FROM Food_Sales;
+**SELECT DISTINCT(Category) FROM Food_Sales;**
 
 <img width="199" height="196" alt="category" src="https://github.com/user-attachments/assets/77cbed4b-73ea-49c9-a284-ea6cb7875104" />
 
 #### 2. Sales per Day:
-SELECT Sales_Date, SUM(Total_Sales) AS Sales_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;
+**SELECT Sales_Date, SUM(Total_Sales) AS Sales_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;**
 
 <img width="242" height="287" alt="salesperday" src="https://github.com/user-attachments/assets/deb06290-480b-4a30-9a09-fed76d752f63" />
 
 #### 3. Sold per Day:
-SELECT Sales_Date, SUM(Quantity) AS Food_Sold_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;
+**SELECT Sales_Date, SUM(Quantity) AS Food_Sold_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;**
 
 <img width="266" height="287" alt="soldperday" src="https://github.com/user-attachments/assets/8b4dc4a2-77b4-4aee-a22f-ca7c9d109e98" />
 
 #### 4. Highest Quantity Sold in One Day:
-SELECT MAX(max_sold) AS Pieces_Sold FROM (SELECT SUM(Quantity) AS max_sold FROM Food_Sales GROUP BY Sales_Date );
+**SELECT MAX(max_sold) AS Pieces_Sold FROM (SELECT SUM(Quantity) AS max_sold FROM Food_Sales GROUP BY Sales_Date );**
 
 <img width="142" height="291" alt="maxsold" src="https://github.com/user-attachments/assets/0ff83128-30ca-4df8-8a2a-d624c890ec22" />
 
 #### 5. Best Seller:
-SELECT Food_Item, COUNT(*) AS Best_Seller FROM Food_Sales GROUP BY Food_Item;
+**SELECT Food_Item, COUNT(*) AS Best_Seller FROM Food_Sales GROUP BY Food_Item;**
 
 <img width="283" height="356" alt="best-seller" src="https://github.com/user-attachments/assets/01d09ad0-1bf3-4936-a893-31335f1bc10e" />
 
