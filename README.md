@@ -2,6 +2,12 @@
 ## Overview
 This synthetic dataset has10 columns, 1,200 rows and 3,574 foods ordered from January 1 – April 1, 2025. The dataset captured customers favorite food ordered, top customers city, sales per day, total food sold per day and best seller.
 ## Table of Contents
+ - [Dataset Description](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/edit/main/README.md#dataset-description)
+ - [Key Characteristics](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/edit/main/README.md#key-characteristics)
+ - [Column Definition](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/edit/main/README.md#column-definition)
+ - [Tools](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/edit/main/README.md#tools)
+ - [Power BI Dashboard](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/edit/main/README.md#power-bi-dashboard)
+ - [Food Sales SQL Queries](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/edit/main/README.md#food-sales-sql-queries)
 ## Dataset Description
 The dataset simulates best seller food, total food sold per day, total sales per day.
 ## Key Characteristics
