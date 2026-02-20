@@ -43,7 +43,6 @@ Microsoft Excel, PostgreSQL database, Power BI
 <img width="330" height="272" alt="food-sales-best-seller" src="https://github.com/user-attachments/assets/dbc9ce16-86b2-4d80-8988-481a710c13c9" />
 
 ## Food Sales SQL Queries
-## KPI
 #### 1. Category:
 **SELECT DISTINCT(Category) FROM Food_Sales;**
 
