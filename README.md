@@ -9,13 +9,15 @@ This synthetic dataset has10 columns, 1,200 rows and 3,574 foods ordered from Ja
  - [Power BI Dashboard](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#power-bi-dashboard)
  - [Food Sales SQL Queries](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#food-sales-sql-queries)
 ## Dataset Description
-The dataset simulates best seller food, total food sold per day, total sales per day.
+The dataset simulates best seller food, total food sold per month, total sales per day.
 ## Key Characteristics
 Sales per Day: $47 - $501.50
 
-Food sold per pieces a Day: 7 - 67
+Food sold per day: 7 - 67
 
-Best Seller: Chicken
+Food sold per pieces a Month: 47 - 1331
+
+Best Seller: Fried Chicken
 ## Column Definition
 | **Column Name** | **Data Type** | **Description** |
 | --- | --- | --- |
@@ -25,13 +27,13 @@ Best Seller: Chicken
 | FoodItem | VARCHAR | Food name |
 | Category | VARCHAR | Type of food style |
 | Quantity | INT | Number of foods ordered |
-| UnitPrice | NUMERIC | Food price |
-| TotalSales | NUMERIC | Total sales per day |
+| UnitPrice | DECIMAL | Food price |
+| TotalSales | DECIMAL | Total sales per day |
 | PaymentMethod | VARCHAR | Mode of payment cash or card |
 | City | VARCHAR | Customers address |
 
 ## Tools
-Microsoft Excel, PostgreSQL database, Power BI
+Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 ## Power BI Dashboard
 1. Restaurant Food Sales Dashboard
 <img width="639" height="598" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/544b8be4-be97-4f03-ab62-9720ccb9fe3c" />
@@ -46,27 +48,58 @@ Microsoft Excel, PostgreSQL database, Power BI
 #### 1. Category:
 **SELECT DISTINCT(Category) FROM Food_Sales;**
 
-<img width="199" height="196" alt="category" src="https://github.com/user-attachments/assets/77cbed4b-73ea-49c9-a284-ea6cb7875104" />
+<img width="175" height="178" alt="food-categories" src="https://github.com/user-attachments/assets/3acb688b-3c18-434a-b200-ac520b10b94c" />
+
 
 #### 2. Sales per Day:
-**SELECT Sales_Date, SUM(Total_Sales) AS Sales_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;**
+**SELECT SalesDate, SUM(TotalSales) AS Sales_per_Day FROM Food_Sales GROUP BY SalesDate ORDER BY SalesDate ASC;**
 
-<img width="242" height="287" alt="salesperday" src="https://github.com/user-attachments/assets/deb06290-480b-4a30-9a09-fed76d752f63" />
-
-#### 3. Sold per Day:
-**SELECT Sales_Date, SUM(Quantity) AS Food_Sold_per_Day FROM Food_Sales GROUP BY Sales_Date ORDER BY Sales_Date ASC;**
-
-<img width="266" height="287" alt="soldperday" src="https://github.com/user-attachments/assets/8b4dc4a2-77b4-4aee-a22f-ca7c9d109e98" />
-
-#### 4. Highest Quantity Sold in One Day:
-**SELECT MAX(max_sold) AS Pieces_Sold FROM (SELECT SUM(Quantity) AS max_sold FROM Food_Sales GROUP BY Sales_Date );**
-
-<img width="142" height="291" alt="maxsold" src="https://github.com/user-attachments/assets/0ff83128-30ca-4df8-8a2a-d624c890ec22" />
-
-#### 5. Best Seller:
-**SELECT Food_Item, COUNT(*) AS Best_Seller FROM Food_Sales GROUP BY Food_Item;**
-
-<img width="283" height="356" alt="best-seller" src="https://github.com/user-attachments/assets/01d09ad0-1bf3-4936-a893-31335f1bc10e" />
+<img width="194" height="348" alt="sales-per-day" src="https://github.com/user-attachments/assets/43fb6a25-8416-4aeb-9196-befee262417b" />
 
 
+#### 3. Total food sold pieces per Day:
+**SELECT SalesDate, SUM(Quantity) AS Food_Sold_per_Day FROM Food_Sales GROUP BY SalesDate ORDER BY SalesDate ASC;**
 
+<img width="239" height="353" alt="total-food-pieces-per-day" src="https://github.com/user-attachments/assets/7ed291a0-655e-48b5-b378-4ac48253c0bb" />
+
+
+#### 4. Highest Sold in One Day:
+**SELECT TOP 1 DAY(SalesDate) AS Day_Ordered, SUM(UnitPrice) AS Sales_per_Day FROM food_sales GROUP BY DAY(SalesDate) ORDER BY SUM(UnitPrice) DESC;**
+
+<img width="215" height="68" alt="highest-sold-per-day" src="https://github.com/user-attachments/assets/65660e00-a556-429b-89e9-57d974ccac97" />
+
+
+#### 5. Lowest Sold in One Day:
+**SELECT TOP 1 DAY(SalesDate) AS Day_Ordered, SUM(UnitPrice) AS Sales_per_Day FROM food_sales GROUP BY DAY(SalesDate) ORDER BY SUM(UnitPrice) ASC;**
+
+<img width="211" height="68" alt="lowest-sold-per-day" src="https://github.com/user-attachments/assets/94f1f56f-fd98-4911-a9e4-162785252dd4" />
+
+
+## 6. Total food sold pieces per Month:
+**SELECT MONTH(SalesDate) AS Sales_per_Day, SUM(Quantity) AS Quantities FROM food_sales GROUP BY MONTH(SalesDate) ORDER BY SUM(Quantity) DESC;**
+
+<img width="203" height="123" alt="total-food-sold-pieces-per-month" src="https://github.com/user-attachments/assets/721b6da1-786a-4bdf-bf23-647be395eb27" />
+
+
+## 7. Best Seller:
+**SELECT FoodItem, COUNT(*) AS BestSeller FROM Food_Sales GROUP BY FoodItem ORDER BY BestSeller DESC;**
+
+<img width="191" height="242" alt="best-seller" src="https://github.com/user-attachments/assets/fd23b28c-3e82-47d3-ac4e-4cb3c2d83d64" />
+
+
+## 8. Top Customers from Country:
+**SELECT City, COUNT(*) AS Customers_City FROM Food_Sales GROUP BY City ORDER BY Customers_City DESC;**
+
+<img width="217" height="145" alt="top-custoers-from-country" src="https://github.com/user-attachments/assets/de055705-b5fa-4d7a-9b3a-34e82f3352bf" />
+
+
+## 9. Cities:
+**SELECT DISTINCT(City) FROM food_sales;**
+
+<img width="154" height="145" alt="cities" src="https://github.com/user-attachments/assets/e3ee13e7-ea76-4730-b649-47a86e604a33" />
+
+
+## 10. Payment Methods:
+**SELECT DISTINCT(PaymentMethod) FROM food_sales;**
+
+<img width="157" height="104" alt="payment-methods" src="https://github.com/user-attachments/assets/5d62739c-ae79-47b7-b75b-ab145ef084b4" />
