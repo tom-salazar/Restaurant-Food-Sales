@@ -13,7 +13,7 @@ The dataset simulates best seller food, total food sold per month, total sales p
 ## Key Characteristics
 Sales per Day: $47 - $501.50
 
-Food sold per day: 7 - 67
+Food sold pieces per day: 7 - 67
 
 Food sold per pieces a Month: 47 - 1331
 
