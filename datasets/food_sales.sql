@@ -2,7 +2,7 @@
 /* Naming Conventions:
 	CTE and Table column names: PascalCase - EveryFirstWordLetterInUpperCase
 	SQL Queries: Uppercase
-	Alias names: snake_case - lower case and word separated by underscore
+	Alias names: snake_case - lower case and word separated by _underscore
 */
 
 -- sales per day, food sold per day
@@ -36,7 +36,7 @@ TotalFoodSoldPerDay AS
 FoodSoldPerMonth AS
 (
 	SELECT
-		DATENAME(MONTH, SalesDate) AS Months,
+		DATENAME(MONTH, SalesDate) AS months,
 		SUM(Quantity) AS number_of_food_sold_per_month
 	FROM food_sales
 	GROUP BY DATENAME(MONTH, SalesDate)
