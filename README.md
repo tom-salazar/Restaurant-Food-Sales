@@ -45,7 +45,7 @@ Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 <img width="330" height="272" alt="food-sales-best-seller" src="https://github.com/user-attachments/assets/dbc9ce16-86b2-4d80-8988-481a710c13c9" />
 
 ## Food Sales SQL Queries
-#### 1. Sales per Day:
+## 1. Sales per Day:
 **SELECT
 	SalesDate,
 	SUM(TotalSales) AS sales_per_day
@@ -57,7 +57,7 @@ ORDER BY SalesDate**
 
 
 
-#### 2. Number of food sold per day:
+## 2. Number of food sold per day:
 **SELECT
 	SalesDate,
 	SUM(Quantity) AS number_of_food_sold_per_day
@@ -69,7 +69,7 @@ ORDER BY SalesDate**
 
 
 
-#### 3. Number of food sold per month:
+## 3. Number of food sold per month:
 **SELECT
 	DATENAME(MONTH, SalesDate) AS months,
 	SUM(Quantity) AS number_of_food_sold_per_month
