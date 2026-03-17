@@ -20,7 +20,6 @@ WITH SalesPerDay AS
 		SUM(TotalSales) AS sales_per_day
 	FROM food_sales
 	GROUP BY SalesDate
-	ORDER BY SalesDate
 ), -- Sales per day
 
 TotalFoodSoldPerDay AS
@@ -30,7 +29,6 @@ TotalFoodSoldPerDay AS
 		SUM(Quantity) AS number_of_food_sold_per_day
 	FROM food_sales
 	GROUP BY SalesDate
-	ORDER BY SalesDate
 ), -- Number of food sold per day
 
 FoodSoldPerMonth AS
@@ -63,7 +61,6 @@ BestSeller AS
 		COUNT(*) AS best_seller
 	FROM food_sales
 	GROUP BY FoodItem
-	ORDER BY best_seller DESC
 ), -- Best Seller: Fried Chicken 
 
 TopCountryCustomers AS
@@ -73,7 +70,6 @@ TopCountryCustomers AS
 		COUNT(*) number_of_customers
 	FROM food_sales
 	GROUP BY City
-	ORDER BY number_of_customers DESC
 ), -- Top Customers: San Francisco
 
 Categories AS
