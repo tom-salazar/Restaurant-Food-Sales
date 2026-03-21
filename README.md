@@ -9,7 +9,7 @@ This synthetic dataset has10 columns, 1,200 rows and 3,574 foods ordered from Ja
  - [Power BI Dashboard](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#power-bi-dashboard)
  - [Food Sales SQL Queries](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#food-sales-sql-queries)
 ## Dataset Description
-The dataset simulates best seller food, Total of Food sold per Month, total sales per day and top country customer.
+The dataset simulates best seller food, total of food sold per month, total sales per day and top country customer.
 ## Key Characteristics
 - Sales per Day
 - Total of Food sold per Month
@@ -34,15 +34,16 @@ The dataset simulates best seller food, Total of Food sold per Month, total sale
 Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 ## Power BI Dashboard
 ## 1. Restaurant Food Sales Dashboard
-<img width="996" height="563" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/e0a4ea33-a217-43d7-ba4e-350083f881d9" />
+<img width="1038" height="587" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/328831db-abe0-4647-bc4c-d0830ee98a3c" />
 
 
 ## 2. Number of Food Sold per Month
-<img width="481" height="431" alt="monthly-sales" src="https://github.com/user-attachments/assets/0acbec5c-b0ca-47e0-856c-f62874c8f72d" />
+<img width="456" height="411" alt="monthly-sales" src="https://github.com/user-attachments/assets/6ef14a70-3ad0-488b-8a79-dcc1b23ca9ce" />
 
 
 ## 3. Best Seller Food from January 1 - April 1, 2025
-<img width="454" height="409" alt="food-sales-best-seller" src="https://github.com/user-attachments/assets/e80cfece-8cd1-43a9-99b9-2e8ba8762082" />
+<img width="458" height="412" alt="food-sales-best-seller" src="https://github.com/user-attachments/assets/256795a0-f4e6-4a54-8253-d87f821ca167" />
+
 
 
 
