@@ -1,6 +1,6 @@
 # Restaurant-Food-Sales-Dataset-and-Analysis
 ## Overview
-This synthetic dataset has10 columns, 1,200 rows and 3,574 foods ordered from January 1 – April 1, 2025. The dataset captured customers favorite food ordered, top customers city, sales per day, total food sold per day and best seller.
+This synthetic dataset has10 columns, 1,200 rows and 3,574 foods ordered from January 1 – April 1, 2025. The dataset captured customers favorite food ordered, top customers city, sales per day, total of food sold per month and best seller.
 ## Table of Contents
  - [Dataset Description](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#dataset-description)
  - [Key Characteristics](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#key-characteristics)
@@ -9,10 +9,10 @@ This synthetic dataset has10 columns, 1,200 rows and 3,574 foods ordered from Ja
  - [Power BI Dashboard](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#power-bi-dashboard)
  - [Food Sales SQL Queries](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#food-sales-sql-queries)
 ## Dataset Description
-The dataset simulates best seller food, sales per month, total sales per day and top country customer.
+The dataset simulates best seller food, Total of Food sold per Month, total sales per day and top country customer.
 ## Key Characteristics
 - Sales per Day
-- Sales per Month
+- Total of Food sold per Month
 - Best Seller
 - Top Country Customer
 
@@ -37,7 +37,7 @@ Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 <img width="996" height="563" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/e0a4ea33-a217-43d7-ba4e-350083f881d9" />
 
 
-## 2. Monthly Sales
+## 2. Number of Food Sold per Month
 <img width="481" height="431" alt="monthly-sales" src="https://github.com/user-attachments/assets/0acbec5c-b0ca-47e0-856c-f62874c8f72d" />
 
 
