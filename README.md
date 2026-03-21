@@ -34,7 +34,7 @@ The dataset simulates best seller food, sales per month, total sales per day and
 Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 ## Power BI Dashboard
 ## 1. Restaurant Food Sales Dashboard
-<img width="1074" height="609" alt="foodsales-dashboard" src="https://github.com/user-attachments/assets/163f4af5-9382-42b2-b9f5-6995d030e1d6" />
+<img width="996" height="563" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/e0a4ea33-a217-43d7-ba4e-350083f881d9" />
 
 
 ## 2. Monthly Sales
@@ -42,7 +42,8 @@ Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 
 
 ## 3. Best Seller Food from January 1 - April 1, 2025
-<img width="475" height="426" alt="best-seller" src="https://github.com/user-attachments/assets/789dafcd-40ab-4659-be82-15c5afb143b3" />
+<img width="454" height="409" alt="food-sales-best-seller" src="https://github.com/user-attachments/assets/e80cfece-8cd1-43a9-99b9-2e8ba8762082" />
+
 
 
 ## Food Sales SQL Queries
