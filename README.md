@@ -102,12 +102,13 @@ FROM food_sales**
 ## 6. Best Seller:
 **SELECT 
 	FoodItem,
-	COUNT(*) AS best_seller
+	SUM(Quantity) AS best_seller
 FROM food_sales
 GROUP BY FoodItem
 ORDER BY best_seller DESC**
 
-<img width="196" height="244" alt="best_seller" src="https://github.com/user-attachments/assets/0b7fd72a-0520-4382-bbfe-e88d10edd3f2" />
+<img width="197" height="242" alt="best_seller" src="https://github.com/user-attachments/assets/1d6b5f48-06b2-4a15-a966-955c9d15a980" />
+
 
 
 
