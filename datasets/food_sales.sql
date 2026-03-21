@@ -58,7 +58,7 @@ BestSeller AS
 (
 	SELECT 
 		FoodItem,
-		COUNT(*) AS best_seller
+		SUM(Quantity) AS best_seller
 	FROM food_sales
 	GROUP BY FoodItem
 ), -- Best Seller: Fried Chicken 
