@@ -9,15 +9,13 @@ This synthetic dataset has10 columns, 1,200 rows and 3,574 foods ordered from Ja
  - [Power BI Dashboard](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#power-bi-dashboard)
  - [Food Sales SQL Queries](https://github.com/tom-salazar/Restaurant-Food-Sales-Dataset-and-Analysis/blob/main/README.md#food-sales-sql-queries)
 ## Dataset Description
-The dataset simulates best seller food, total food sold per month, total sales per day.
+The dataset simulates best seller food, sales per month, total sales per day and top country customer.
 ## Key Characteristics
-Sales per Day: $47 - $501.50
+	- Sales per Day
+	- Sales per Month
+	- Best Seller
+	- Top Country Customer
 
-Food sold pieces per day: 7 - 67
-
-Food sold per pieces a Month: 47 - 1331
-
-Best Seller: Fried Chicken
 ## Column Definition
 | **Column Name** | **Data Type** | **Description** |
 | --- | --- | --- |
@@ -36,13 +34,16 @@ Best Seller: Fried Chicken
 Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 ## Power BI Dashboard
 1. Restaurant Food Sales Dashboard
-<img width="639" height="598" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/544b8be4-be97-4f03-ab62-9720ccb9fe3c" />
+<img width="1074" height="609" alt="foodsales-dashboard" src="https://github.com/user-attachments/assets/163f4af5-9382-42b2-b9f5-6995d030e1d6" />
 
-2. Food Category and Number of Foods Sold per Day
-<img width="330" height="227" alt="food-sales-category" src="https://github.com/user-attachments/assets/24784a85-98dc-4a91-a1b1-ae9483862ffe" />
+
+2. Monthly Sales
+<img width="481" height="431" alt="monthly-sales" src="https://github.com/user-attachments/assets/0acbec5c-b0ca-47e0-856c-f62874c8f72d" />
+
 
 3. Best Seller Food from January 1 - April 1, 2025
-<img width="330" height="272" alt="food-sales-best-seller" src="https://github.com/user-attachments/assets/dbc9ce16-86b2-4d80-8988-481a710c13c9" />
+<img width="475" height="426" alt="best-seller" src="https://github.com/user-attachments/assets/789dafcd-40ab-4659-be82-15c5afb143b3" />
+
 
 ## Food Sales SQL Queries
 ## 1. Sales per Day:
