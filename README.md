@@ -31,7 +31,7 @@ The dataset simulates best seller food, total of food sold per month, total sale
 | City | VARCHAR | Customers address |
 
 ## Tools
-Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
+Microsoft SQL Server Management Studio, Power BI
 ## Power BI Dashboard
 ## 1. Restaurant Food Sales Dashboard
 <img width="1038" height="587" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/328831db-abe0-4647-bc4c-d0830ee98a3c" />
