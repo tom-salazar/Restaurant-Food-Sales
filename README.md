@@ -34,7 +34,7 @@ The dataset simulates best seller food, total of food sold per month, total sale
 Microsoft SQL Server Management Studio, Power BI
 ## Power BI Dashboard
 ## 1. Restaurant Food Sales Dashboard
-<img width="1038" height="587" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/328831db-abe0-4647-bc4c-d0830ee98a3c" />
+<img width="1034" height="587" alt="food-sales-powerbi" src="https://github.com/user-attachments/assets/6987068e-b7bc-4583-b33b-303f38ccb160" />
 
 
 ## 2. Number of Food Sold per Month
